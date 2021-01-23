@@ -1,0 +1,295 @@
+{
+	"mainParameters": [
+		{
+			"id": 1,
+			"name": "airCommandsRetryCount",
+			"description": "Air command for retry count",
+			"displayName": "Air Retry Count",
+			"type": "number",
+			"constrains": {
+				"minLength": "3",
+				"maxLength": "5",
+				"required": "true"
+			},
+			"requireRestart": true,
+			"defaultValue": "0",
+			"instanceVariable": false
+		},
+		{
+			"id": 2,
+			"name": "airCurrency",
+			"description": "Air currency",
+			"displayName": "Air currency",
+			"type": "number",
+			"constrains": {
+				"minLength": "3",
+				"maxLength": "5",
+				"required": "true"
+			},
+			"requireRestart": true,
+			"defaultValue": "10",
+			"instanceVariable": false
+		},
+		{
+			"id": 3,
+			"name": "bivrostSms",
+			"description": "Bivrost attributes",
+			"displayName": "Bivrost attributes",
+			"type": "Object",
+			"arrayElementType": "bivrotProps",
+			"constrains": {
+				"minLength": "3",
+				"maxLength": "5",
+				"required": "true"
+			},
+			"requireRestart": true,
+			"defaultValue": "10",
+			"instanceVariable": false
+		},
+		{
+			"id": 4,
+			"name": "prepaidServiceClasses",
+			"description": "Prepaid services classes",
+			"displayName": "prepaidServiceClasses",
+			"type": "ArrayInt",
+			"editable": true,
+			"constrains": {
+				"minLength": "3",
+				"maxLength": "5",
+				"required": "true"
+			},
+			"requireRestart": true,
+			"instanceVariable": false
+		},
+		{
+			"id": 5,
+			"name": "apps",
+			"description": "Apps",
+			"displayName": "Apps",
+			"type": "Array",
+			"editable": true,
+			"arrayElementType": "StartStopApp",
+			"requireRestart": true,
+			"instanceVariable": false
+		}
+	],
+	"types": [
+		{
+			"name": "bivrotProps",
+			"parameters": [
+				{
+					"id": 1,
+					"name": "password",
+					"description": "password",
+					"displayName": "Bivrost password",
+					"type": "text",
+					"constrains": {
+						"minLength": "3",
+						"maxLength": "8",
+						"required": "true"
+					},
+					"requireRestart": true,
+					"defaultValue": "0",
+					"instanceVariable": false
+				},
+				{
+					"id": 2,
+					"name": "username",
+					"description": "username",
+					"displayName": "username",
+					"type": "text",
+					"constrains": {
+						"minLength": "3",
+						"maxLength": "5",
+						"required": "true"
+					},
+					"requireRestart": true,
+					"defaultValue": "10",
+					"instanceVariable": false
+				},
+				{
+					"id": 3,
+					"name": "url",
+					"description": "url",
+					"displayName": "url",
+					"type": "text",
+					"constrains": {
+						"minLength": "3",
+						"maxLength": "5",
+						"required": "true"
+					},
+					"requireRestart": true,
+					"defaultValue": "10",
+					"instanceVariable": false
+				}
+			]
+		},
+		{
+			"name": "StartStopApp",
+			"parameters": [
+				{
+					"id": 1,
+					"name": "initialFeeLendme",
+					"description": "initial Fee lendme ",
+					"displayName": "initial Fee lendme ",
+					"type": "number",
+					"constrains": {
+						"minLength": "3",
+						"maxLength": "5",
+						"required": "true"
+					},
+					"requireRestart": true,
+					"defaultValue": "0",
+					"instanceVariable": false
+				},
+				{
+					"id": 2,
+					"name": "initialFeeMain",
+					"description": "initial Fee Main",
+					"displayName": "initial Fee main",
+					"type": "number",
+					"constrains": {
+						"minLength": "3",
+						"maxLength": "5",
+						"required": "true"
+					},
+					"requireRestart": true,
+					"defaultValue": "10",
+					"instanceVariable": false
+				},
+				{
+					"id": 3,
+					"name": "minimumMinutes",
+					"description": "Minimum Minutes",
+					"displayName": "Minimum Minutes",
+					"type": "number",
+					"constrains": {
+						"minLength": "3",
+						"maxLength": "5",
+						"required": "true"
+					},
+					"requireRestart": true,
+					"defaultValue": "10",
+					"instanceVariable": false
+				},
+				{
+					"id": 4,
+					"name": "minimumBalanceMain",
+					"description": "Minimum balance Main",
+					"displayName": "Minimum balance Main",
+					"type": "number",
+					"constrains": {
+						"minLength": "3",
+						"maxLength": "5",
+						"required": "true"
+					},
+					"requireRestart": true,
+					"defaultValue": "10",
+					"instanceVariable": false
+				},
+				{
+					"id": 5,
+					"name": "minimumBalanceLendme",
+					"description": "Minimum balance lend me",
+					"displayName": "Minimum balance lend me",
+					"type": "number",
+					"constrains": {
+						"minLength": "3",
+						"maxLength": "5",
+						"required": "true"
+					},
+					"requireRestart": true,
+					"defaultValue": "10",
+					"instanceVariable": false
+				},
+				{
+					"id": 6,
+					"name": "startPromo",
+					"description": "Start Promo",
+					"displayName": "Start Promo",
+					"type": "Object",
+					"arrayElementType": "startPromo",
+					"constrains": {
+						"minLength": "3",
+						"maxLength": "5",
+						"required": "true"
+					},
+					"requireRestart": true,
+					"defaultValue": "10",
+					"instanceVariable": false
+				}
+			]
+		},
+		{
+			"name": "startPromo",
+			"parameters": [
+				{
+					"id": 1,
+					"name": "usageOfferId",
+					"description": "Usage Offer Id",
+					"displayName": "Usage Offer Id",
+					"type": "number",
+					"constrains": {
+						"minLength": "3",
+						"maxLength": "5",
+						"required": "true"
+					},
+					"requireRestart": true,
+					"defaultValue": "0",
+					"instanceVariable": false
+				},
+				{
+					"id": 2,
+					"name": "promoType",
+					"description": "promo Type",
+					"displayName": "promo Type",
+					"type": "Object",
+					"arrayElementType": "promoType",
+					"constrains": {
+						"minLength": "3",
+						"maxLength": "5",
+						"required": "true"
+					},
+					"requireRestart": true,
+					"defaultValue": "0",
+					"instanceVariable": false
+				}
+			]
+		},
+		{
+			"name": "promoType",
+			"parameters": [
+				{
+					"id": 1,
+					"name": "begin",
+					"description": "begin",
+					"displayName": "begin",
+					"type": "number",
+					"constrains": {
+						"minLength": "3",
+						"maxLength": "5",
+						"required": "true"
+					},
+					"requireRestart": true,
+					"defaultValue": "0",
+					"instanceVariable": false
+				},
+				{
+					"id": 2,
+					"name": "end",
+					"description": "end",
+					"displayName": "end",
+					"type": "number",
+					"constrains": {
+						"minLength": "3",
+						"maxLength": "5",
+						"required": "true"
+					},
+					"requireRestart": true,
+					"defaultValue": "0",
+					"instanceVariable": false
+				}
+			]
+		}
+	]
+}

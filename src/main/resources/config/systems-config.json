@@ -1,0 +1,67 @@
+[
+	{
+		"name": "TimeBasedData",
+		"abbreviation": "tbd",
+		"description": "Time Based Data (TBD) is a new system built to handle the management of Time-Based data access service (a new IN service allowing customers to use data services and get charged based on the time they are using the service rather than the volume they utilize). ",
+		"appDirectory": "/home/app/tbd",
+		"configDirectory": "C:/tbd-config/",
+		"configFileType": "yaml",
+		"configFileName": "start-stop-services",
+		"configFileExt" :"yml",
+		"urlsCfgFile":"urls.cfg",
+		"usersCfgFile":"users.cfd",
+		"libPath": "/home/app/tbd/lib",
+		"runAppUrl":"http://localhost:8080/tbd/run",
+		"restartAppUrl":"http://localhost:8080/tbd/restart",
+		"gracefullShutDownUrl":"http://localhost:8080/tbd/gracefulShutDown",
+		"metaData":"tbd.json",
+		"instances": [
+			{
+				"name": "TimeBasedData",
+				"abbreviation": "tbd1",
+				"description": "An instance of TBD",
+				"appDirectory": "/home/app/tbd/tbd1",
+				"configDirectory": "/home/app/tbd/tbd1/config",
+				"runAppUrl":"http://localhost:8080/tbd1/run",
+				"restartAppUrl":"http://localhost:8080/tbd1/restart",
+				"gracefullShutDownUrl":"http://localhost:8080/tbd1/gracefulShutDown"
+			},
+			{
+				"name": "TimeBasedData",
+				"abbreviation": "tbd2",
+				"description": "An instance of TBD",
+				"appDirectory": "/home/app/tbd/tbd2",
+				"configDirectory": "/home/app/tbd/tbd2/config",
+				"runAppUrl":"http://localhost:8080/tbd2/run",
+				"restartAppUrl":"http://localhost:8080/tbd2/restart",
+				"gracefullShutDownUrl":"http://localhost:8080/tbd2/gracefulShutDown"
+			}
+		]
+	},
+	{
+		"name": "Bivrost",
+		"abbreviation": "bivrost",
+		"description": "Time Based Data (TBD) is a new system built to handle the management of Time-Based data access service (a new IN service allowing customers to use data services and get charged based on the time they are using the service rather than the volume they utilize). ",
+		"appDirectory": "/home/app/bivrost",
+		"configDirectory": "/home/app/bivrost/config",
+		"configFileType": "cfg",
+		"configFileName": "tieto",
+		"libPath": "/home/app/bivrost/lib",
+		"instances": [
+			{
+				"name": "channels",
+				"abbreviation": "chnls",
+				"description": "An instance of bivrost",
+				"appDirectory": "/home/app/bivrost/channels",
+				"configDirectory": "/home/app/bivrost/channels/config"
+			},
+			{
+				"name": "exterbal",
+				"abbreviation": "ext",
+				"description": "An instance of bivrost",
+				"appDirectory": "/home/app/bivrost/ext",
+				"configDirectory": "/home/app/bivrost/ext/config"
+			}
+		]
+	}
+]
